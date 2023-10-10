@@ -336,9 +336,10 @@ body {
 }
 
 .events__item {
-	max-width: 500px;
 	min-height: 700px;
 	display: flex;
+	flex-direction: column;
+	flex-basis: 500px;
 	border: 1px solid #CACACA;
 }
 
@@ -367,6 +368,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	gap: 65px;
 }
 
 .events__item-info {
