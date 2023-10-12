@@ -129,19 +129,53 @@ body {
 	gap: 96px;
 }
 
+.nav__item:hover {
+	color: #C283F3;
+}
+
+.nav__item:active {
+	color: #7943A4;
+}
+
 .nav__link {
 	font-size: 18px;
 	font-weight: 600;
 	line-height: normal;
 }
 
+.nav__link:focus {
+	background: #7943A4;
+	outline: none;
+}
+
 .search {
-	display: inline-block;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	width: 28px;
 	height: 28px;
 	border: none;
 	background-color: transparent;
-	background-image: url(../img/svg/search.svg);
+	cursor: pointer;
+}
+
+.search:focus {
+	background: #7943A4;
+	outline: none;
+}
+
+.search-icon {
+	fill: white;
+}
+
+.search-icon:hover {
+	fill: #C283F3;
+}
+
+.search-icon:active {
+	fill: #9D5CD0;
+	/* outline: none; */
 }
 
 /* hero */
@@ -177,6 +211,20 @@ body {
 	border-radius: 100px;
 	color: var(--white-color);
 	background-color: var(--purple-color);
+}
+
+.hero__btn:focus {
+  outline: 2px solid #C283F3;
+	outline-offset: 3px;
+}
+
+.hero__btn:hover {
+  outline: 3px solid #D1A9F0;
+}
+
+.hero__btn:active {
+  outline: 2px solid #D1A9F0;
+	background: #7943A4;
 }
 
 /* about */
@@ -219,11 +267,32 @@ body {
 
 .gallery__era-item {
 	line-height: 32px;
-}
-
-.gallery__era-item {
 	user-select: none;
 	cursor: pointer;
+}
+
+.gallery__era-item:focus .gallery__radio-text::before {
+	border: 1px solid #C283F3;
+}
+
+.gallery__era-item:focus .gallery__radio-text {
+	color: #C283F3;
+}
+
+.gallery__era-item:hover .gallery__radio-text::before {
+	border: 1px solid #C283F3;
+}
+
+.gallery__era-item:active .gallery__radio-text::before {
+	border: 1px solid #C283F3;
+}
+
+.gallery__era-item:active .gallery__radio-text {
+	color: #C283F3;
+}
+
+.gallery__era-item:active .gallery__radio-text::after {
+	opacity: 1;
 }
 
 .gallery__radio-input {
@@ -409,7 +478,29 @@ body {
 	line-height: 32px;
 }
 
+.events__item-details:focus {
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+	background: #9D5CD0;
+	outline: none;
+}
+
+.events__item-details:hover {
+	color: #7943A4;
+	border-bottom: 1px solid #7943A4;
+}
+
+.events__item-details:active {
+	color: var(--333-color);
+	border-bottom: 1px solid var(--333-color);
+}
+
 /* projects */
+.projects {
+	padding-top: 30px;
+	padding-bottom: 80px;
+}
+
 .projects__text {
 	margin: 0;
 	margin-bottom: 30px;
@@ -436,5 +527,119 @@ body {
 .projects__partners-link {
 	display: flex;
 }
+
+/* showroom */
+.showroom {
+	border: 1px solid #CACACA;
+	padding: 35px 0;
+}
+
+.showroom__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.showroom__title {
+	margin: 0;
+	color: var(--333-color);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+}
+
+.showroom__address {
+	color: var(--333-color);
+	line-height: 32px;
+	font-style: normal;
+}
+
+.showroom__form {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.showroom__form-input {
+	width: 270px;
+	height: 50px;
+	border-radius: 100px;
+	padding: 9px 43px 9px 24px;
+	outline: none;
+	border: 1px solid #333;
+}
+
+.showroom__form-input::placeholder {
+	color: #999;
+}
+
+.showroom__form-input:focus {
+	background: #ECECEC;
+}
+
+.showroom__form-input:hover {
+	background: #ECECEC;
+}
+
+.showroom__form-btn {
+	height: 50px;
+	border-radius: 100px;
+	color: var(--purple-color);
+	padding: 0px 35px;
+	border: 2px solid #9D5CD0;
+	background: transparent;
+}
+
+.showroom__form-btn:focus {
+	outline: 2px solid var(--purple-color);
+	outline-offset: 3px;
+}
+
+.showroom__form-btn:hover {
+	color: var(--white-color);
+	background: var(--purple-color);
+}
+
+.showroom__form-btn:active {
+	color: var(--white-color);
+	background: #7943A4;
+	outline: 3px solid #D1A9F0;
+	outline-offset: -1px;
+}
+
+.showroom__contacts-title {
+	margin: 0;
+	color: var(--333-color);
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 32px;
+	margin-bottom: 6px;
+}
+
+.showroom__socials {
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+}
+
+.showroom__social-link {
+	display: flex;
+}
+
+.showroom__social-link:focus {
+	opacity: 0.5;
+	outline: none;
+}
+
+.showroom__social-link:hover {
+	opacity: 0.5;
+}
+
+.showroom__social-link:active {
+  outline: 1px solid #9d5cd0;
+}
+
+/*  */
 
 /*  */

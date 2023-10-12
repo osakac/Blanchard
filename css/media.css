@@ -1,3 +1,29 @@
+@media (max-width: 1540px) {
+	.showroom {
+		padding-top: 42px;
+	}
+	
+	.showroom__wrapper {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 30px;
+	}
+
+	.showroom__title {
+		margin-bottom: 10px;
+	}
+
+	.showroom__address {
+		font-size: 14px;
+		line-height: normal;
+	}
+
+	.showroom__form-btn {
+		padding: 0 41px;
+		letter-spacing: -0.3px;
+	}
+}
+
 @media (max-width: 1400px) {
 	.container {
 		padding: 0 50px;
@@ -82,6 +108,7 @@
 
 	.events__item {
 		width: 290px;
+		min-height: 683px;
 	}
 
 	.events__item--img1,
@@ -92,6 +119,7 @@
 
 	.events__item-wrapper {
 		padding: 213px 34px 48px;
+		gap: 20px;
 	}
 
 	.events__item-info {
@@ -102,6 +130,14 @@
 	.events__item-title {
 		max-width: 222px;
 		margin-bottom: 7px;
+	}
+
+	.projects {
+		padding-top: 40px;
+	}
+
+	.projects__text {
+		margin-bottom: 20px;
 	}
 }
 
@@ -158,6 +194,38 @@
 	.events__item-title {
 		max-width: 493px;
 		margin-bottom: 15px;
+	}
+
+	.projects {
+		padding-top: 39px;
+		padding-bottom: 85px;
+	}
+
+	.projects__text {
+		margin-bottom: 28px;
+	}
+
+	.projects__partners {
+		margin-bottom: 28px;
+	}
+
+	.projects__partners-link {
+		max-width: 316px;
+	}
+
+	.showroom__form {
+		flex-wrap: wrap;
+		column-gap: 20px;
+		row-gap: 12px;
+	}
+
+	.showroom__form-input {
+		width: 323px;
+	}
+
+	.showroom__form-btn {
+		padding: 0 27px;
+		letter-spacing: normal;
 	}
 }
 
@@ -299,6 +367,75 @@
 	.catalog__item-lifedate {
 		margin-bottom: 13px;
 	}
+
+	.projects {
+		padding-top: 29px;
+	}
+
+	.projects__text {
+		margin-bottom: 20px;
+	}
+
+	.projects__partners {
+		font-size: 18px;
+		margin-bottom: 11px;
+	}
+
+	.projects__partners-list {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 12px;
+	}
+
+	.projects__partners-link {
+		max-width: 290px;
+		max-height: 100px;
+	}
+
+	.showroom {
+		border: none;
+	}
+
+	.showroom__wrapper {
+		gap: 20px;
+	}
+
+	.showroom__title {
+		font-size: 18px;
+		line-height: normal;
+		margin-bottom: 5px;
+	}
+
+	.showroom__form {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 20px;
+	}
+
+	.showroom__form-input {
+		width: 290px;
+		height: 40px;
+	}
+
+	.showroom__form-btn {
+		height: 40px;
+		padding: 0 35px;
+	}
+
+	.showroom__contacts-title {
+		font-size: 18px;
+		letter-spacing: -.4px;
+	}
+
+	.showroom__social-link {
+		justify-content: center;
+		align-items: center;
+	}
+
+	.showroom__social-icon {
+		width: 50px;
+		height: 50px;
+	}
 }
 
 @media (max-width: 575px) {
@@ -318,5 +455,9 @@
 	.events__item-title {
 		max-width: 244px;
 		margin-bottom: 5px;
+	}
+
+	.events__item-details {
+		padding-left: 5px;
 	}
 }
