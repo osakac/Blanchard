@@ -331,15 +331,15 @@ body {
 /* events */
 .events__list {
 	display: flex;
-	align-items: center;
-	gap: 50px;
+	justify-content: space-between;
+	gap: 27px;
 }
 
 .events__item {
 	min-height: 700px;
 	display: flex;
 	flex-direction: column;
-	flex-basis: 500px;
+	width: 500px;
 	border: 1px solid #CACACA;
 }
 
@@ -364,6 +364,7 @@ body {
 }
 
 .events__item-wrapper {
+	height: 100%;
 	padding: 313px 50px 48px;
 	display: flex;
 	flex-direction: column;
