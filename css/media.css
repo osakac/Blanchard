@@ -74,6 +74,8 @@
 
 	.gallery {
 		background-image: url(../img/gallery/gallery-md.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
 	}
 
 	.gallery__title {
