@@ -27,6 +27,7 @@
 
 html {
 	box-sizing: border-box;
+	scroll-behavior: smooth;
 }
 
 *,
@@ -116,6 +117,9 @@ body {
 
 .logo-link {
 	display: flex;
+}
+
+.header__logo-link {
 	margin-right: 179px;
 }
 
@@ -169,13 +173,12 @@ body {
 	fill: white;
 }
 
-.search-icon:hover {
+.search:hover .search-icon {
 	fill: #C283F3;
 }
 
-.search-icon:active {
+.search:active .search-icon {
 	fill: #9D5CD0;
-	/* outline: none; */
 }
 
 /* hero */
@@ -271,7 +274,11 @@ body {
 	cursor: pointer;
 }
 
-.gallery__era-item:focus .gallery__radio-text::before {
+.gallery__radio-input:focus + .gallery__radio-text {
+	color: #C283F3;
+}
+
+.gallery__radio-input:focus + .gallery__radio-text::before {
 	border: 1px solid #C283F3;
 }
 
@@ -619,12 +626,25 @@ body {
 .showroom__socials {
 	display: flex;
 	align-items: center;
-	list-style: none;
 	gap: 20px;
 }
 
 .showroom__social-link {
 	display: flex;
+	position: relative;
+	border-radius: 50%;
+}
+
+.showroom__social-link::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	border-radius: inherit;
+	border: 1px solid var(--purple-color);
+	opacity: 0;
 }
 
 .showroom__social-link:focus {
@@ -636,10 +656,61 @@ body {
 	opacity: 0.5;
 }
 
-.showroom__social-link:active {
-  outline: 1px solid #9d5cd0;
+.showroom__social-link:active::before {
+  opacity: 1;
 }
 
-/*  */
+/* footer */
+.footer {
+	padding: 50px 0;
+	background: var(--black-color);
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.footer__logo-img {
+	max-width: 173px;
+}
+
+.footer__socials {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.footer__social {
+}
+
+.footer__social-link {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer__social-icon {
+	width: 45px;
+	height: 45px;
+	fill: #CACACA;
+}
+
+.footer__social-link:focus {
+	outline: none;
+}
+
+.footer__social-link:focus .footer__social-icon {
+	fill: #FFFFFF;
+}
+
+.footer__social-link:hover .footer__social-icon {
+	fill: #FFFFFF;
+}
+
+.footer__social-link:active .footer__social-icon {
+	fill: var(--purple-color);
+}
 
 /*  */
