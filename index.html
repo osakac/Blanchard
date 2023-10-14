@@ -10,39 +10,54 @@
 		<title>Blanchard - художественная галерея</title>
 	</head>
 	<body>
-		<header class="header">
+		<header class="header" aria-label="Верхняя часть сайта">
 			<div class="container header__wrapper">
-				<a href="#" class="header__logo-link logo-link">
+				<a
+					href="#"
+					class="header__logo-link logo-link"
+					aria-label="Ссылка Blanchard"
+				>
 					<img
 						class="header__logo-img"
 						src="img/svg/logo.svg"
 						alt="Логотип Blanchard - художественная галерея"
 					/>
 				</a>
-				<nav class="nav">
-					<ul class="list-reset nav__list">
-						<li class="nav__item">
-							<a href="#about" class="nav__link">О нас</a>
+				<nav class="nav" aria-label="Навигация">
+					<ul class="list-reset nav__list" aria-label="Меню навигации">
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#about" class="nav__link" aria-label="Ссылка">О нас</a>
 						</li>
-						<li class="nav__item">
-							<a href="#gallery" class="nav__link">Галерея</a>
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#gallery" class="nav__link" aria-label="Ссылка"
+								>Галерея</a
+							>
 						</li>
-						<li class="nav__item">
-							<a href="#catalog" class="nav__link">Каталог</a>
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#catalog" class="nav__link" aria-label="Ссылка"
+								>Каталог</a
+							>
 						</li>
-						<li class="nav__item">
-							<a href="#events" class="nav__link">События</a>
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#events" class="nav__link" aria-label="Ссылка"
+								>События</a
+							>
 						</li>
-						<li class="nav__item">
-							<a href="#projects" class="nav__link">Проекты</a>
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#projects" class="nav__link" aria-label="Ссылка"
+								>Проекты</a
+							>
 						</li>
-						<li class="nav__item">
-							<a href="#contacts" class="nav__link">Контакты</a>
+						<li class="nav__item" aria-label="Пункт меню">
+							<a href="#contacts" class="nav__link" aria-label="Ссылка"
+								>Контакты</a
+							>
 						</li>
 					</ul>
 				</nav>
-				<button class="search">
+				<button class="search" aria-label="Кнопка поиска">
 					<svg
+						aria-label="Иконка поиска"
 						class="search-icon"
 						xmlns="http://www.w3.org/2000/svg"
 						width="28"
@@ -67,22 +82,26 @@
 			</div>
 		</header>
 
-		<main class="main">
-			<section class="hero">
+		<main class="main" aria-label="Основной контент страницы">
+			<section class="hero" aria-label="Секция превью">
 				<div class="container">
-					<h1 class="hero__title">Прикоснитесь к прекрасному</h1>
+					<h1 class="hero__title" aria-label="Заголовок">
+						Прикоснитесь к прекрасному
+					</h1>
 					<p class="hero__text">
 						Мы вынуждены отталкиваться от того, что реализация намеченных
 						плановых заданий создаёт предпосылки для новых предложений
 					</p>
-					<button class="btn hero__btn">Подписаться на рассылку</button>
+					<button class="btn hero__btn" aria-label="Кнопка">
+						Подписаться на рассылку
+					</button>
 				</div>
 			</section>
 
-			<section class="section about" id="about">
+			<section class="section about" id="about" aria-label="Секция о нас">
 				<div class="container">
-					<h2 class="section-title">О нас</h2>
-					<p class="about__text">
+					<h2 class="section-title" aria-label="Заголовок секции">О нас</h2>
+					<p class="about__text" aria-label="О нас">
 						Ясность нашей позиции очевидна: семантический разбор внешних
 						противодействий однозначно определяет каждого участника
 						как способного принимать собственные решения касаемо распределения
@@ -99,9 +118,14 @@
 				</div>
 			</section>
 
-			<section class="section gallery" id="gallery">
+			<section class="section gallery" id="gallery" aria-label="Секция галерея">
 				<div class="container gallery__wrapper">
-					<h2 class="section-title gallery__title">Галерея</h2>
+					<h2
+						class="section-title gallery__title"
+						aria-label="Заголовок секции"
+					>
+						Галерея
+					</h2>
 
 					<div class="gallery__content">
 						<div class="gallery__era-list">
@@ -119,7 +143,7 @@
 							</label>
 						</div>
 
-						<ul class="gallery__works list-reset">
+						<ul class="gallery__works list-reset" aria-label="Список работ">
 							<li class="gallery__item">
 								<img
 									class="gallery__item-img"
@@ -146,9 +170,9 @@
 				</div>
 			</section>
 
-			<section class="section catalog" id="catalog">
+			<section class="section catalog" id="catalog" aria-label="Секция каталог">
 				<div class="container">
-					<h2 class="section-title">Каталог</h2>
+					<h2 class="section-title" aria-label="Заголовок секции">Каталог</h2>
 					<p class="catalog__text">
 						Акционеры крупнейших компаний, которые представляют собой яркий
 						пример континентально-европейского типа политической культуры, будут
@@ -159,7 +183,7 @@
 						на независимые элементы.
 					</p>
 
-					<ul class="catalog__list list-reset">
+					<ul class="catalog__list list-reset" aria-label="Список художников">
 						<li class="catalog__item">
 							<img
 								class="catalog__item-img"
@@ -168,10 +192,10 @@
 							/>
 							<div class="catalog__item-content">
 								<h3 class="catalog__item-name">Доменико Гирландайо</h3>
-								<span class="catalog__item-lifedate"
+								<span class="catalog__item-lifedate" aria-label="Годы жизни"
 									>2 июня 1448–11 января 1494</span
 								>
-								<p class="catalog__item-text">
+								<p class="catalog__item-text" aria-label="Описание">
 									Один из ведущих флорентийских художников Кватроченто,
 									основатель художественной династии, которую продолжили
 									его брат Давид и сын Ридольфо. Глава художественной
@@ -191,8 +215,10 @@
 							/>
 							<div class="catalog__item-content">
 								<h3 class="catalog__item-name">Андреа дель Верроккьо</h3>
-								<span class="catalog__item-lifedate">1435–10 октября 1488</span>
-								<p class="catalog__item-text">
+								<span class="catalog__item-lifedate" aria-label="Годы жизни"
+									>1435–10 октября 1488</span
+								>
+								<p class="catalog__item-text" aria-label="Описание">
 									Творческий путь молодого Андреа, как и многих знаменитых
 									художников и скульпторов эпохи Возрождения, начался с обучения
 									и работы в одной из ювелирных мастерских Флоренции.
@@ -212,8 +238,10 @@
 							/>
 							<div class="catalog__item-content">
 								<h3 class="catalog__item-name">Лоренцо ди Креди</h3>
-								<span class="catalog__item-lifedate">1459–12 января 1537</span>
-								<p class="catalog__item-text">
+								<span class="catalog__item-lifedate" aria-label="Годы жизни"
+									>1459–12 января 1537</span
+								>
+								<p class="catalog__item-text" aria-label="Описание">
 									Один из ведущих флорентийских художников Кватроченто,
 									основатель художественной династии, которую продолжили
 									его брат Давид и сын Ридольфо. Глава художественной
@@ -229,75 +257,96 @@
 				</div>
 			</section>
 
-			<section class="section events" id="events">
+			<section class="section events" id="events" aria-label="Секция события">
 				<div class="container">
-					<h2 class="section-title">События</h2>
-					<ul class="events__list list-reset">
-						<li class="events__item">
+					<h2 class="section-title" aria-label="Заголовок секции">События</h2>
+					<ul class="events__list list-reset" aria-label="Список событий">
+						<li class="events__item" aria-label="Событие">
 							<div class="events__item-wrapper events__item--img1">
 								<div>
-									<div class="events__item-info">
+									<div
+										class="events__item-info"
+										aria-label="Информация о проведении"
+									>
 										<span class="events__item-place">Музей им. Щусева</span>
 										<span class="events__item-time"
 											>с 20 марта по 30 апреля</span
 										>
 									</div>
-									<h3 class="events__item-title">
+									<h3 class="events__item-title" aria-label="Заголовок события">
 										Книжная гравюра в&nbsp;живом восприятии
 									</h3>
-									<p class="events__item-text">
+									<p class="events__item-text" aria-label="Описание">
 										Один из ведущих флорентийских художников Кватроченто,
 										основатель художественной династии, которую продолжили
 										его брат Давид и сын Ридольфо
 									</p>
 								</div>
-								<a href="#" class="events__item-details">Подробнее</a>
+								<a href="#" class="events__item-details" aria-label="Ссылка"
+									>Подробнее</a
+								>
 							</div>
 						</li>
-						<li class="events__item">
+						<li class="events__item" aria-label="Событие">
 							<div class="events__item-wrapper events__item--img2">
 								<div>
-									<div class="events__item-info">
+									<div
+										class="events__item-info"
+										aria-label="Информация о проведении"
+									>
 										<span class="events__item-place">ММОМА</span>
 										<span class="events__item-time">24 марта 19:00</span>
 									</div>
-									<h3 class="events__item-title">
+									<h3 class="events__item-title" aria-label="Заголовок события">
 										«Открытая дискуссия». Дмитрий Петров и Сергей Ильин.
 									</h3>
-									<p class="events__item-text">
+									<p class="events__item-text" aria-label="Описание">
 										Высокий уровень вовлечения представителей целевой аудитории
 										является чётким доказательством простого факта
 									</p>
 								</div>
-								<a href="#" class="events__item-details">Подробнее</a>
+								<a href="#" class="events__item-details" aria-label="Ссылка"
+									>Подробнее</a
+								>
 							</div>
 						</li>
-						<li class="events__item">
+						<li class="events__item" aria-label="Событие">
 							<div class="events__item-wrapper events__item--img3">
 								<div>
-									<div class="events__item-info">
+									<div
+										class="events__item-info"
+										aria-label="Информация о проведении"
+									>
 										<span class="events__item-place">Еврейский музей</span>
 										<span class="events__item-time"
 											>с 31 марта по 21 апреля</span
 										>
 									</div>
-									<h3 class="events__item-title">Выставка «Формация 2020»</h3>
-									<p class="events__item-text">
+									<h3 class="events__item-title" aria-label="Заголовок события">
+										Выставка «Формация 2020»
+									</h3>
+									<p class="events__item-text" aria-label="Описание">
 										Идейные соображения высшего порядка, а также современная
 										методология разработки играет важную роль в формировании
 										глубокомысленных рассуждений
 									</p>
 								</div>
-								<a href="#" class="events__item-details">Подробнее</a>
+								<a href="#" class="events__item-details" aria-label="Ссылка"
+									>Подробнее</a
+								>
 							</div>
 						</li>
 					</ul>
 				</div>
 			</section>
 
-			<section class="section projects" id="projects">
+			<section
+				class="section projects"
+				id="projects"
+				aria-label="Секция проекты"
+			>
 				<div class="container">
-					<h2 class="section-title">Проекты</h2>
+					<h2 class="section-title" aria-label="Заголовок секции">Проекты</h2>
 					<p class="projects__text">
 						Предварительные выводы: постоянное информационно-пропагандистское
 						обеспечение нашей деятельности однозначно фиксирует необходимость
@@ -315,9 +364,16 @@
 						до степени совершённой неузнаваемости.
 					</p>
 					<h3 class="projects__partners">Партнеры проектов:</h3>
-					<ul class="projects__partners-list list-reset">
-						<li class="projects__partners-item">
-							<a href="#" class="projects__partners-link">
+					<ul
+						class="projects__partners-list list-reset"
+						aria-label="Список партнеров"
+					>
+						<li class="projects__partners-item" aria-label="Партнер">
+							<a
+								href="#"
+								class="projects__partners-link"
+								aria-label="Ссылка Freelands foundation"
+							>
 								<img
 									class="projects__partners-img"
 									src="img/svg/partners-freelands.svg"
@@ -325,8 +381,12 @@
 								/>
 							</a>
 						</li>
-						<li class="projects__partners-item">
-							<a href="#" class="projects__partners-link">
+						<li class="projects__partners-item" aria-label="Партнер">
+							<a
+								href="#"
+								class="projects__partners-link"
+								aria-label="Ссылка Institute for contemporary art"
+							>
 								<img
 									class="projects__partners-img"
 									src="img/svg/partners-institute.svg"
@@ -338,16 +398,20 @@
 				</div>
 			</section>
 
-			<section class="section showroom" id="contacts">
+			<section
+				class="section showroom"
+				id="contacts"
+				aria-label="Секция шоурум"
+			>
 				<div class="container showroom__wrapper">
 					<div class="showroom__info">
 						<h3 class="showroom__title">Шоурум № 4</h3>
-						<address class="showroom__address">
+						<address class="showroom__address" aria-label="Адрес">
 							Леонтьевский переулок, дом 5/1
 						</address>
 					</div>
 
-					<form class="showroom__form" method="post">
+					<form class="showroom__form" method="post" aria-label="Форма заявки">
 						<input
 							class="showroom__form-input"
 							type="text"
@@ -365,10 +429,14 @@
 
 					<div class="showroom__contacts">
 						<h3 class="showroom__contacts-title">Связаться в один клик</h3>
-						<ul class="showroom__socials list-reset">
-							<li class="showroom__social">
-								<a href="#" class="showroom__social-link">
+						<ul
+							class="showroom__socials list-reset"
+							aria-label="Список социальных сетей"
+						>
+							<li class="showroom__social" aria-label="Мессенджер Whats up">
+								<a href="#" class="showroom__social-link" aria-label="Ссылка">
 									<svg
+										aria-label="Иконка Whats up"
 										class="showroom__social-icon"
 										xmlns="http://www.w3.org/2000/svg"
 										width="40"
@@ -394,9 +462,10 @@
 									</svg>
 								</a>
 							</li>
-							<li class="showroom__social">
-								<a href="#" class="showroom__social-link">
+							<li class="showroom__social" aria-label="Мессенджер Telegram">
+								<a href="#" class="showroom__social-link" aria-label="Ссылка">
 									<svg
+										aria-label="Иконка Telegram"
 										class="showroom__social-icon"
 										xmlns="http://www.w3.org/2000/svg"
 										width="40"
@@ -430,19 +499,27 @@
 			</section>
 		</main>
 
-		<footer class="footer">
+		<footer class="footer" aria-label="Нижняя часть сайта">
 			<div class="container footer__wrapper">
-				<a href="#" class="footer__logo-link logo-link">
+				<a
+					href="#"
+					class="footer__logo-link logo-link"
+					aria-label="Ссылка Blanchard"
+				>
 					<img
 						class="footer__logo-img"
 						src="img/svg/logo.svg"
 						alt="Логотип Blanchard - художественная галерея"
 					/>
 				</a>
-				<ul class="footer__socials list-reset">
-					<li class="footer__social">
-						<a href="#" class="footer__social-link">
+				<ul
+					class="footer__socials list-reset"
+					aria-label="Список социальных сетей"
+				>
+					<li class="footer__social" aria-label="Социальная сеть Вконтакте">
+						<a href="#" class="footer__social-link" aria-label="Ссылка">
 							<svg
+								aria-label="Иконка Вконтакте"
 								class="footer__social-icon"
 								xmlns="http://www.w3.org/2000/svg"
 								width="45"
@@ -457,9 +534,10 @@
 							</svg>
 						</a>
 					</li>
-					<li class="footer__social">
-						<a href="#" class="footer__social-link">
+					<li class="footer__social" aria-label="Социальная сеть Одноклассники">
+						<a href="#" class="footer__social-link" aria-label="Ссылка">
 							<svg
+								aria-label="Иконка Одноклассники"
 								class="footer__social-icon"
 								xmlns="http://www.w3.org/2000/svg"
 								width="45"
