@@ -2,7 +2,7 @@
 
 ## Задача
 
-Сверстать Landing Page для художественной галереи
+Сверстать Landing Page для художественной галереи ([макет][url])
 
 ## Требования к верстке
 
@@ -13,3 +13,5 @@
 - **PixelPerfect** - точное совпадение с макетом
 
 ## Посмотреть сайт - https://osakac.github.io/Blanchard/
+
+[url]: https://www.figma.com/file/tj7JfWXXpd5poySBgaW1nL/Blanchard-(new)?node-id=0%3A1&mode=dev
